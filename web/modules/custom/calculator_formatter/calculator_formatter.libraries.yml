@@ -1,0 +1,4 @@
+calculator_formatter:
+  css:
+    component:
+      css/calculator_formatter.css: {}

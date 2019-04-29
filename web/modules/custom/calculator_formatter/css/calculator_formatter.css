@@ -1,0 +1,17 @@
+.calculator-formatter-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.calculator-formatter-wrapper > div {
+  flex: 0 1 auto;
+}
+.calculator-formatter-wrapper:hover .fc-hidden {
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s;
+}
+.fc-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
+}

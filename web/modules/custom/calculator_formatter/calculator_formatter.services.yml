@@ -1,0 +1,7 @@
+services:
+  calculator_formatter.wc_eval_math_stack:
+    class: Drupal\calculator_formatter\Services\WCEvalMathStack
+    public: false
+  calculator_formatter.wc_eval_math:
+    class: Drupal\calculator_formatter\Services\WCEvalMath
+    arguments: ['@calculator_formatter.wc_eval_math_stack', '@messenger', '@string_translation']

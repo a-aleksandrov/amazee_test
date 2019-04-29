@@ -1,0 +1,7 @@
+name: 'Calculator Formatter'
+type: module
+description: 'Makes simple math operation. Available as field_formatter.'
+core: 8.x
+package: 'custom'
+dependencies:
+  - drupal:field

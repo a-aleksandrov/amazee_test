@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Calculator Formatter module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function calculator_formatter_theme() {
+  return [
+    'calculator_formatter' => [
+      'variables' => [
+        'expression' => '',
+        'result' => '',
+      ],
+      'template' => 'calculator-formatter',
+    ],
+  ];
+}

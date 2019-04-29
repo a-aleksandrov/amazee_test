@@ -1,0 +1,20 @@
+version: "2.1"
+services:
+  # PHPMyAdmin
+  pma:
+    hostname: pma
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_HOST=db
+      - PMA_USER=root
+      - PMA_PASSWORD=${MYSQL_ROOT_PASSWORD:-root}
+    labels:
+      - io.docksal.virtual-host=pma.${VIRTUAL_HOST}
+  # Cli
+  cli:
+    environment:
+      # These variables are set here
+      - DOCKSAL=ON
+      - VIRTUAL_HOST
+    ports:
+      - '2228:22'
